@@ -6,158 +6,35 @@
 <title>Denis Jurca - Official Store</title>
 
 <style>
-* {
-    box-sizing: border-box;
-}
-
-body {
-    margin: 0;
-    font-family: 'Segoe UI', sans-serif;
-    background: #f8f8f8;
-    color: #111;
-}
-
-header {
-    background: black;
-    color: white;
-    padding: 60px 20px;
-    text-align: center;
-}
-
-header h1 {
-    margin: 0;
-    font-size: 42px;
-    letter-spacing: 3px;
-}
-
-header p {
-    margin-top: 10px;
-    font-size: 16px;
-    opacity: 0.8;
-}
-
-.banner {
-    background: linear-gradient(90deg,#000,#222);
-    color: white;
-    text-align: center;
-    padding: 15px;
-    font-weight: bold;
-    letter-spacing: 1px;
-}
-
-.container {
-    max-width: 1200px;
-    margin: auto;
-    padding: 50px 20px;
-}
-
-.products {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 40px;
-}
-
-.product {
-    background: white;
-    border-radius: 15px;
-    padding: 20px;
-    box-shadow: 0 15px 35px rgba(0,0,0,0.06);
-    transition: 0.3s ease;
-    position: relative;
-}
-
-.product:hover {
-    transform: translateY(-8px);
-}
-
-.product img {
-    width: 100%;
-    height: 350px;
-    object-fit: cover;
-    border-radius: 10px;
-}
-
-.badge {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    padding: 6px 14px;
-    border-radius: 20px;
-    font-size: 12px;
-    font-weight: bold;
-    color: white;
-}
-
-.best {
-    background: #e60023;
-}
-
-.new {
-    background: black;
-}
-
-.price {
-    font-size: 20px;
-    font-weight: bold;
-    margin: 10px 0;
-}
-
-select, input {
-    padding: 8px;
-    margin: 5px 3px;
-    border-radius: 6px;
-    border: 1px solid #ccc;
-}
-
-button {
-    padding: 10px 18px;
-    border: none;
-    background: black;
-    color: white;
-    border-radius: 8px;
-    cursor: pointer;
-    margin-top: 10px;
-    transition: 0.2s;
-}
-
-button:hover {
-    background: #333;
-}
-
-.cart {
-    margin-top: 70px;
-    background: white;
-    padding: 30px;
-    border-radius: 15px;
-    box-shadow: 0 15px 35px rgba(0,0,0,0.06);
-}
-
-.total {
-    font-size: 24px;
-    font-weight: bold;
-    margin-top: 20px;
-}
-
-.whatsapp-float {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background: #25D366;
-    color: white;
-    padding: 15px 18px;
-    border-radius: 50px;
-    font-weight: bold;
-    text-decoration: none;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-}
+* { box-sizing: border-box; }
+body { margin: 0; font-family: 'Segoe UI', sans-serif; background: #f8f8f8; color: #111; }
+header { background: black; color: white; padding: 60px 20px; text-align: center; }
+header h1 { margin: 0; font-size: 42px; letter-spacing: 3px; }
+header p { margin-top: 10px; font-size: 16px; opacity: 0.8; }
+.banner { background: linear-gradient(90deg,#000,#222); color: white; text-align: center; padding: 15px; font-weight: bold; letter-spacing: 1px; }
+.container { max-width: 1200px; margin: auto; padding: 50px 20px; }
+.products { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; }
+.product { background: white; border-radius: 15px; padding: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.06); transition: 0.3s ease; position: relative; }
+.product:hover { transform: translateY(-8px); }
+.product img { width: 100%; height: 350px; object-fit: cover; border-radius: 10px; }
+.badge { position: absolute; top: 20px; left: 20px; padding: 6px 14px; border-radius: 20px; font-size: 12px; font-weight: bold; color: white; }
+.best { background: #e60023; }
+.new { background: black; }
+.price { font-size: 20px; font-weight: bold; margin: 10px 0; }
+select, input { padding: 8px; margin: 5px 3px; border-radius: 6px; border: 1px solid #ccc; }
+button { padding: 10px 18px; border: none; background: black; color: white; border-radius: 8px; cursor: pointer; margin-top: 10px; transition: 0.2s; }
+button:hover { background: #333; }
+.cart { margin-top: 70px; background: white; padding: 30px; border-radius: 15px; box-shadow: 0 15px 35px rgba(0,0,0,0.06); }
+.cart-item { display: flex; justify-content: space-between; margin-bottom: 10px; }
+.total { font-size: 24px; font-weight: bold; margin-top: 20px; }
+.remove { color: red; cursor: pointer; font-weight: bold; }
+.whatsapp-float { position: fixed; bottom: 20px; right: 20px; background: #25D366; color: white; padding: 15px 18px; border-radius: 50px; font-weight: bold; text-decoration: none; box-shadow: 0 5px 15px rgba(0,0,0,0.2); }
 </style>
 </head>
 
 <body>
 
-<div class="banner">
-🚚 Transport Rapid | 🔥 Colecție Nouă 2026
-</div>
+<div class="banner">🚚 Transport Rapid | 🔥 Colecție Nouă 2026</div>
 
 <header>
 <h1>DENIS JURCA</h1>
@@ -165,7 +42,6 @@ button:hover {
 </header>
 
 <div class="container">
-
 <div class="products">
 
 <div class="product">
@@ -210,17 +86,23 @@ button:hover {
 
 </div>
 
-<a class="whatsapp-float" href="https://wa.me/40733195544" target="_blank">
-WhatsApp
-</a>
+<a class="whatsapp-float" href="https://wa.me/40733195544" target="_blank">WhatsApp</a>
 
 <script>
-let cart = [];
+let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
 function addToCart(name, price, sizeId, qtyId) {
     let size = document.getElementById(sizeId).value;
     let qty = parseInt(document.getElementById(qtyId).value);
+
     cart.push({name, price, size, qty});
+    localStorage.setItem("cart", JSON.stringify(cart));
+    renderCart();
+}
+
+function removeItem(index) {
+    cart.splice(index,1);
+    localStorage.setItem("cart", JSON.stringify(cart));
     renderCart();
 }
 
@@ -230,17 +112,21 @@ function renderCart() {
     cartItems.innerHTML = "";
     let total = 0;
 
-    cart.forEach(item => {
+    cart.forEach((item, index) => {
         let subtotal = item.price * item.qty;
         total += subtotal;
         cartItems.innerHTML += `
-        <div>
+        <div class="cart-item">
         ${item.name} | Mărime: ${item.size} | Cant: ${item.qty} | ${subtotal} Lei
+        <span class="remove" onclick="removeItem(${index})">X</span>
         </div>`;
     });
 
     totalElement.innerText = "Total: " + total + " Lei";
 }
+
+// La încărcarea paginii, afișăm coșul salvat
+renderCart();
 
 function sendOrder() {
     if(cart.length === 0){
